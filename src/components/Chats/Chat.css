@@ -1,0 +1,21 @@
+.chat_users a{
+  display: flex;
+}
+
+.chat_users a img{
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.main__{
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.main_name{
+font-weight: bold;
+}
+
+.main_chat{
+font-size: 0.75rem;
+}

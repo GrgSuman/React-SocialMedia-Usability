@@ -1,0 +1,147 @@
+.profile{
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.top_profile{
+    flex: 1;
+    margin: 20px 0;
+}
+.user_profile_details{
+    flex: 2;
+    margin: 20px 2%;
+}
+
+.tab_menu{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.tab_menu::before{
+    position: absolute;
+    width: 15%;
+    border-bottom: 3px solid var(--buttonColor);
+    content: "";
+    bottom: -15px;
+    transition: .2s linear;
+    left: var(--tabPosition);
+}
+.tab_menu p{
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+.tab_menu p:hover{
+    cursor: pointer;
+}
+
+.more__{
+    margin: 20px 0;
+    color: var(--buttonColor);
+}
+
+.more__:hover{
+    cursor: pointer;
+}
+
+.user__{
+    display: flex;
+    background: var(--lightBackground);
+}
+
+.user__ img{
+    margin: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.user__ div{
+    margin-top:60px;
+}
+
+.post_of_user{
+    margin-top: 40px;
+}
+
+.post_of_user .mainPostList{
+    padding: 0;
+}
+
+.post_of_user .mainPost{
+    box-shadow: none;
+}
+
+.loader{
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader2{
+    display: block;
+    height: 60px;
+    width: 60px;
+    border: 2px solid var(--buttonColor);
+    animation: spinner 2s infinite;
+    border-radius: 20%;
+}
+
+@keyframes spinner{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.my_follow{
+    height:30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--lightBackground);
+}
+
+.my_follow h1{
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+}
+
+.my_follow h2{
+    margin: 1rem 0;
+}
+
+@media(max-width:1024px){
+    .profile{
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+
+@media(max-width:465px){
+    .user__ img{
+        height: 150px;width: 150px;
+    }
+
+    .user_profile_details{
+        margin:0px 2%;
+    }
+    .sm_change{
+        font-size: 1rem;
+    }
+
+    .more__{
+        font-size: 0.875rem;
+    }
+    .sm__{
+    font-size: 0.75rem;
+    }
+}

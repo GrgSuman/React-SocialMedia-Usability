@@ -1,0 +1,119 @@
+.upload_form{
+    background-color: var(--darkBackColor);
+    position: fixed;
+    top:65px;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    height: calc(100vh - 65px);
+    justify-content: center;
+    z-index: 3;
+}
+
+.post_form{
+    margin-top: 30px;
+    width:30%;
+    height: fit-content;
+    background-color: var(--lightBackground);
+    position: relative;
+    padding:50px 20px;
+    box-shadow: 0px -1px 7px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.post_form h4{
+    margin-bottom: 1rem;
+}
+
+.post_form .fa-times{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--darkBackground);
+    padding: 10px 12px;
+    border-radius: 50%;
+    color: cadetblue;
+    z-index: 123;
+}
+
+.post_form i:hover{
+    cursor: pointer;
+}
+
+.post_form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.post_form button{
+    background:var(--buttonColor);
+    padding: 10px 15px;
+    padding-left: 0;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 0.8rem;
+}
+
+.post_form button:hover{
+    cursor: pointer;
+}
+
+.fileInpput{
+    display: none;
+}
+.design{
+    background: var(--lightBackground);
+    border: 5px solid var(--darkBackground)!important;
+    text-decoration: dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+.design:hover{
+    cursor: pointer;
+}
+.design lottie-player{
+    margin: 1rem 0;
+}
+
+.post_form input{
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid rgb(51 147 220);
+    outline: none;
+}
+
+
+@media(max-width:1295px){
+    .post_form{
+        width: 35%;
+    }
+}
+@media(max-width:1025px){
+    .post_form{
+        width: 60%;
+    }
+}@media(max-width:600px){
+    .post_form{
+        width: 80%;
+    }
+}@media(max-width:400px){
+    .post_form{
+        width: 100%;
+        margin-top: 0;
+        border-radius: 0;
+        box-shadow: none;
+        height: 100vh;
+    }
+    .upload_form{
+        height: 100vh;
+        top: 0;
+    }
+}

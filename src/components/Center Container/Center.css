@@ -1,0 +1,108 @@
+.mainPostList{
+    width: 100%;
+    padding: 0 10%;
+}
+
+.mainPost{
+    background-color:var(--lightBackground);
+    padding: 15px 5%;
+    box-shadow: 0px -1px 7px 3px rgba(0, 0, 0, 0.1);
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+.user_profile{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.more{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.user_profile img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+
+.user_profile img:hover{
+    cursor: pointer;
+}
+
+.user_name_time{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.time{
+    font-size: 0.75rem;
+}
+
+.title{
+    margin: 20px 0;
+    margin-bottom: 0;
+}
+
+.mainImage{
+    height: auto;
+    width: 100%;
+    margin:20px 0;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: .1s linear;
+}
+
+.mainImage:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    transition: .1s linear;
+}
+
+.like_comment_share{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(0 0 0 / 16%);
+    border-bottom: 1px solid rgb(0 0 0 / 16%);
+}
+
+.like_comment_share i{
+    margin: 0 10px;
+}
+
+.like_comment_share section{
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 0.875rem;
+}
+
+.like_comment_share section:hover{
+    cursor: pointer;
+    background-color:var(--darkBackground);
+
+}
+
+@media(max-width:1024px){
+
+    .mainPostList{
+        padding: 0 1%;
+    }
+
+    .labelInfo{
+        display: none;
+    }
+
+   .mainPost{
+       margin:15px 0;
+       font-size: 0.75rem;
+   }
+
+   .like_comment_share section {
+    padding: 10px 15px;
+    font-size: 0.75rem;
+}
+}
