@@ -1,0 +1,119 @@
+.rightMain{
+    padding: 20px 10%;
+  }
+
+  .ads{
+      position: relative;
+  }
+
+  .ads i{
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px;
+      background-color: var(--darkBackground);
+      color: var(--textColor);
+  }
+
+  .ads i:hover{
+      cursor: pointer;
+  }
+
+  .ads img{
+      height:300px;
+      width:100%;
+  }
+
+  .joinCommunity{
+      margin: 20px 0;
+  }
+
+  .joinGroupList{
+    height: 200px;
+    overflow-y: scroll;
+}
+
+  .joinGroupList li{
+      padding: 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0;
+  }
+
+  .joinGroupList li img{
+      height:50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-right: 20px;
+  }
+
+  .joinGroupList li p{
+      display: flex;
+      flex-direction: column;
+      margin: 5px 0;
+  }
+
+  .joinGroupList li p:hover{
+    cursor: pointer;
+  }
+
+
+ 
+
+  .joinGroupList li:hover{
+    cursor: pointer;
+    background: var(--darkBackground);
+  }
+
+  .joinGroupList li p span{
+      font-size: 0.75rem;
+  }
+
+  .joinGroupList li button{
+      outline: none;
+      border: 1px solid var(--buttonColor);
+      color: var(--textColor);
+      font-size: 0.875rem;
+      padding: 8px 12%;
+      background:var(--lightBackground);
+      border-radius: 20px;
+  }
+
+  .joinGroupList li button:hover{
+    background-color:var(--buttonColor);
+    color: rgba(255, 255, 255);
+    cursor: pointer;
+  }
+
+
+  .trending_groups{
+      font-weight: bold;
+      letter-spacing: 0.1em;
+  }
+
+  .createCommunity{
+      margin: 25px 0;
+  }
+
+  .createCommunity button{
+    background:var(--buttonColor);
+    padding: 10px 15px;
+    padding-left: 0;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+    border: none;
+    margin: 15px 0;
+    width: 100%;
+  }
+
+  .createCommunity button i{
+      color: white;
+  }
+
+  .createCommunity button:hover{
+    /* background-color: #0078d3cc; */
+    cursor: pointer;
+}
